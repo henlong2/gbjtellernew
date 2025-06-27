@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔮가보자 TAROT 예언🔮</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🔮가보자 TAROT 예언🔮</h1> <p class="instruction">질문을 입력하고 MAGIC 버튼을 누르면 9장의 카드가 나온다, 아주 신중하게 9장의 카드중 한장의 카드를 선택한다. 그리고 마음의 버튼을 누른다</p>
+
+        <div class="question-input-group">
+            <label for="userQuestion">당신의 질문을 입력하세요:</label>
+            <input type="text" id="userQuestion" placeholder="당신의 질문은 당신의 선택입니다. 후회하지 마세요.">
+            <button id="magicButton" class="magic-button" style="display: none;">MAGIC</button>
+        </div>
+
+        <div id="cardSelectionArea" class="card-selection" style="display: none;">
+            <button class="card" data-card="card1">카드 1</button>
+            <button class="card" data-card="card2">카드 2</button>
+            <button class="card" data-card="card3">카드 3</button>
+            <button class="card" data-card="card4">카드 4</button>
+            <button class="card" data-card="card5">카드 5</button>
+            <button class="card" data-card="card6">카드 6</button>
+            <button class="card" data-card="card7">카드 7</button>
+            <button class="card" data-card="card8">카드 8</button>
+            <button class="card" data-card="card9">카드 9</button>
+        </div>
+        <div class="button-group">
+            <button id="getPredictionBtn" class="action-button">마음의 버튼</button>
+            <button id="resetBtn" class="action-button reset-button">새로운 시작</button>
+        </div>
+        <div id="predictionResult" class="prediction-result">
+            </div>
+        <p class="disclaimer">
+            이 타로 예언은 오락 목적으로만 제공됩니다.
+            어떠한 결과도 맹신하지 마세요.
+            당신의 미래는 당신 스스로 만들어 나가는 것입니다.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
